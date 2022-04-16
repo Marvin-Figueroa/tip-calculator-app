@@ -1,0 +1,113 @@
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185deg, 41%, 84%);
+}
+
+main {
+  background-color: white;
+}
+
+h1 {
+  color: hsl(186deg, 14%, 43%);
+  letter-spacing: 4px;
+}
+
+h2 {
+  color: hsl(184deg, 14%, 56%);
+  font-size: 14px;
+}
+
+.results {
+  background-color: hsl(183deg, 100%, 15%);
+}
+
+.button-check:checked + label,
+.btn-tip:hover,
+.btn-reset {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+.btn-reset:hover {
+  background-color: #3fd9c5;
+}
+
+.money {
+  color: hsl(172deg, 67%, 45%);
+}
+
+.btn-tip {
+  background-color: hsl(183deg, 100%, 15%);
+  color: white;
+}
+
+.bill-input,
+.people-input {
+  color: hsl(183deg, 100%, 15%);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.bill-input::-moz-placeholder, .people-input::-moz-placeholder {
+  text-align: right;
+}
+.bill-input:-ms-input-placeholder, .people-input:-ms-input-placeholder {
+  text-align: right;
+}
+.bill-input::placeholder,
+.people-input::placeholder {
+  text-align: right;
+}
+
+.bill-input-container,
+.people-input-container {
+  position: relative;
+  background-color: hsl(189deg, 41%, 97%);
+}
+
+.input-custom-tip:focus {
+  box-shadow: inset 0 0 0 2px hsl(172deg, 67%, 45%);
+}
+.input-custom-tip::-moz-placeholder {
+  text-align: center;
+}
+.input-custom-tip:-ms-input-placeholder {
+  text-align: center;
+}
+.input-custom-tip::placeholder {
+  text-align: center;
+}
+
+.input-custom-tip-error {
+  box-shadow: inset 0 0 0 2px indianred;
+}
+
+.focused {
+  box-shadow: inset 0 0 0 2px hsl(172deg, 67%, 45%);
+}
+
+.people-input-error,
+.bill-input-error {
+  box-shadow: inset 0 0 0 2px indianred;
+}
+.people-input-error::before,
+.bill-input-error::before {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: -27px;
+  color: indianred;
+  font-size: 14px;
+}
+
+.people-input-error::before {
+  content: "Can't be zero";
+}
+
+.bill-input-error::before {
+  content: "Invalid bill amount";
+}
+
+.text-result {
+  font-size: 14px;
+}
